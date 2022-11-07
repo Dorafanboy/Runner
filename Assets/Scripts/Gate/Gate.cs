@@ -3,7 +3,8 @@ using UnityEngine;
 
 public abstract class Gate : MonoBehaviour
 {
-    [field:SerializeField] public int RunnerFactor { get; private set; }
+    [SerializeField] private int _runnerFactor;
+    protected int RunnerFactor => _runnerFactor;
 
     public event Action<int, Vector3> RunnerEntered;
 

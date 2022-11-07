@@ -1,4 +1,6 @@
-﻿public interface IFactory<T>
+﻿using UnityEngine;
+
+public interface IFactory<T>
 {
-    T Create(T template);
+    T Create(T template, Vector3 position);
 }
