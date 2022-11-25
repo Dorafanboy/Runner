@@ -3,10 +3,11 @@ using UnityEngine;
 
 public abstract class Gate : MonoBehaviour
 {
+    [SerializeField] private GateView _view;
     [SerializeField] private int _runnerFactor;
-    protected int RunnerFactor => _runnerFactor;
-
+    public int RunnerFactor => _runnerFactor;
     public event Action<int, Vector3> RunnerEntered;
+    public GateView View => _view;
 
     private void OnTriggerEnter(Collider other)
     {

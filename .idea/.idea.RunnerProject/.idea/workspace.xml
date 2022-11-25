@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b8aa0f0-837c-48e7-b5cc-1488465debde" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RunnerProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RunnerProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gates/AddGate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gates/AddGate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Gates/MultiplyGate.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Gates/MultiplyGate.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Runner.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Runner.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Runner.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Runner.prefab.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/IFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/IFactory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Factory/RunnerFactory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Factory/RunnerFactory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gate/Gate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gate/Gate.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Spawner.cs" afterDir="false" />
     </list>
@@ -15,6 +18,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Factory/GateFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Gate/GateView.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -73,7 +77,11 @@
       <option name="presentableId" value="Default" />
       <updated>1667739882302</updated>
       <workItem from="1667739884335" duration="629000" />
-      <workItem from="1667799838422" duration="4243000" />
+      <workItem from="1667799838422" duration="4400000" />
+      <workItem from="1667825752373" duration="3707000" />
+      <workItem from="1668095411126" duration="1343000" />
+      <workItem from="1668266679909" duration="594000" />
+      <workItem from="1669386707535" duration="3065000" />
     </task>
     <task id="LOCAL-00001" summary="Сделал пердвижение и ворота">
       <created>1667739947779</created>
@@ -82,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667739947779</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Сделал спавнер ворот">
+      <created>1667805502502</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667805502502</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +120,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Сделал пердвижение и ворота" />
-    <option name="LAST_COMMIT_MESSAGE" value="Сделал пердвижение и ворота" />
+    <MESSAGE value="Сделал спавнер ворот" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал спавнер ворот" />
   </component>
 </project>

@@ -26,17 +26,22 @@ public class Spawner : MonoBehaviour
 
         for (int i = 0; i < _gateCount; i++)
         {
-            var idx = Random.Range(0, _gateTemplates.Length);
             // можно эжту всю логикцу засунуть в скриптейбл или чето подобное, т.е
             //все что должен спавнер делать это спавнить, а данные получить из конфига
-
-            var gate = _gateFactory.Create(_gateTemplates[idx], _startSpawn.position);
+            var idx = Random.Range(0, _gateTemplates.Length);
+            var idx1 = Random.Range(0, _gateTemplates.Length);
             
-            _startSpawn.position += _distanceBetweenGates;
+            var gate = _gateFactory.Create(_gateTemplates[idx], _startSpawn.position);
+            var gate1 = _gateFactory.Create(_gateTemplates[idx1], _startSpawn.position + _distanceBetweenGates);
 
             _gates.Add(gate);
+            _gates.Add(gate1);
             
+            gate.View.Init(gate.RunnerFactor);
+            gate1.View.Init(gate1.RunnerFactor);
+
             gate.RunnerEntered += OnRunnerEntered;
+            gate1.RunnerEntered += OnRunnerEntered;
 
             _startSpawn.position += _xOffset;
         }
@@ -52,17 +57,15 @@ public class Spawner : MonoBehaviour
 
     private void OnRunnerEntered(int spawnCount, Vector3 spawnPosition)
     {
-        Debug.Log(spawnCount);
         for (int i = 0; i < spawnCount; i++)
         {
             var ball = Instantiate(_runnerTemplate, spawnPosition, Quaternion.identity, transform);
-            
             ball.Init(_player.transform);
 
             var x = _distanceFactor * Mathf.Sqrt(i) * Mathf.Cos(i * _radius);
             var z = _distanceFactor * Mathf.Sqrt(i) * Mathf.Sin(i * _radius);
             
-            var newPos = new Vector3(x, 0f, z);
+            var newPos = new Vector3(x + 0.1f, 0f, z);
 
             ball.transform.DOLocalMove(newPos, 0.5f).SetEase(Ease.OutBack);
             
